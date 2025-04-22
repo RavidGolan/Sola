@@ -1,5 +1,5 @@
 export enum ContentType {
-    file,
-    dir,
-    symlink
+    file = "file",
+    dir = "dir",
+    symlink = "symlink"
 }
