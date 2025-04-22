@@ -1,7 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ES6", // or higher (ES2017, ESNext)
-    "lib": ["ES6", "DOM"], // Ensure Promise and fetch APIs are included
-    "module": "ESNext"
-  }
+    "target": "ES6",
+    "lib": ["ES6"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "strict": true, // Optional, enables strict type-checking
+    "pretty": true,
+    "sourceMap": true,
+    "outDir": "./dist",   // Output folder for compiled JS files
+    "rootDir": "./src",   // Folder containing TypeScript source files
+    "esModuleInterop": true,
+  },
+  "include": [
+    "src/**/*"  // Include all TypeScript files under the src directory
+  ],
+  "exclude": [
+    "node_modules"  // Exclude node_modules from compilation
+  ]
 }
+
+
