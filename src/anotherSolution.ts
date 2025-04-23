@@ -41,8 +41,8 @@ async function fetchGitHubFiles(
     for (const item of data) {
         const node: FileTreeNode = {
             name: item.name,
-            path: item.path,
-            type: item.type
+            type: item.type,
+            path: item.path
         };
 
         if (item.type === 'dir') {
